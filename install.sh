@@ -41,13 +41,13 @@ if [ -x "./${BINARY}" ]; then
     echo "Latest version: ${LATEST_VERSION}"
 
     if [ "${INSTALLED_VERSION}" = "${LATEST_VERSION}" ]; then
-        echo "worker creator is up to date. Running..."
+        echo "CF Worker Wizard is up to date. Running..."
         exec ./"${BINARY}"
     else
         echo "Updating to version ${LATEST_VERSION}..."
     fi
 else
-    echo "worker creator not found on device. Installing version ${LATEST_VERSION}..."
+    echo "CF Worker Wizard not found on device. Installing version ${LATEST_VERSION}..."
 fi
 
 echo "Downloading ${ARCHIVE}..."
