@@ -41,17 +41,17 @@ if [ -x "./${BINARY}" ]; then
     echo "Latest version: ${LATEST_VERSION}"
 
     if [ "${INSTALLED_VERSION}" = "${LATEST_VERSION}" ]; then
-        echo "Wizard is up to date. Running..."
+        echo "wc is up to date. Running..."
         exec ./"${BINARY}"
     else
         echo "Updating to version ${LATEST_VERSION}..."
     fi
 else
-    echo "Wizard not found on device. Installing version ${LATEST_VERSION}..."
+    echo "wc not found on device. Installing version ${LATEST_VERSION}..."
 fi
 
 echo "Downloading ${ARCHIVE}..."
-curl -L -# -o "${ARCHIVE}" "https://github.com/bia-pain-bache/BPB-Wizard/releases/latest/download/${ARCHIVE}"
+curl -L -# -o "${ARCHIVE}" "https://github.com/Kolandone/wcv2/releases/latest/download/${ARCHIVE}"
 
 if [ "$EXT" = "zip" ]; then
     unzip -q -o "${ARCHIVE}"
