@@ -15,4 +15,4 @@
 برای نصب یا اجرای آخرین نسخه ابزار، کافی است دستور زیر را کپی کرده و در ترمینال خود اجرا کنید:
 
 ```bash
-bash <(curl -fsSL (https://raw.githubusercontent.com/Kolandone/wcv2/refs/heads/main/install.sh))
+bash <(curl -fsSL https://raw.githubusercontent.com/Kolandone/wcv2/refs/heads/main/install.sh)
