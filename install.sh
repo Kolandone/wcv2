@@ -31,8 +31,8 @@ else
     EXT="tar.gz"
 fi
 
-BINARY="Worker-Creator-koland"
-ARCHIVE="Worker-Creator-koland-${OS_LOWER}-${ARCH}.${EXT}"
+BINARY="cf-worker-wizard"
+ARCHIVE="cf-worker-wizard-${OS_LOWER}-${ARCH}.${EXT}"
 LATEST_VERSION=$(curl -fsSL https://raw.githubusercontent.com/Kolandone/wcv2/refs/heads/main/VERSION)
 
 if [ -x "./${BINARY}" ]; then
@@ -56,9 +56,9 @@ curl -L -# -o "${ARCHIVE}" "https://github.com/Kolandone/wcv2/releases/latest/do
 if [ "$EXT" = "zip" ]; then
     
     unzip -q -o "${ARCHIVE}"
-    if [ -d "Worker-Creator-koland-${OS_LOWER}-${ARCH}" ]; then
-        mv "Worker-Creator-koland-${OS_LOWER}-${ARCH}/${BINARY}" .
-        rm -rf "Worker-Creator-koland-${OS_LOWER}-${ARCH}"
+    if [ -d "cf-worker-wizard-${OS_LOWER}-${ARCH}" ]; then
+        mv "cf-worker-wizard-${OS_LOWER}-${ARCH}/${BINARY}" .
+        rm -rf "cf-worker-wizard-${OS_LOWER}-${ARCH}"
     fi
 else
     
