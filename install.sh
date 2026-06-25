@@ -33,7 +33,7 @@ fi
 
 BINARY="Wizard"
 ARCHIVE="BPB-Wizard-${OS_LOWER}-${ARCH}.${EXT}"
-LATEST_VERSION=$(curl -fsSL https://raw.githubusercontent.com/bia-pain-bache/BPB-Wizard/main/VERSION)
+LATEST_VERSION=$(curl -fsSL https://raw.githubusercontent.com/Kolandone/wcv2/refs/heads/main/VERSION)
 
 if [ -x "./${BINARY}" ]; then
     INSTALLED_VERSION=$("./${BINARY}" --version)
