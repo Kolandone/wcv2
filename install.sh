@@ -31,7 +31,7 @@ else
     EXT="tar.gz"
 fi
 
-BINARY="cf-worker-wizard"
+BINARY="Worker-Creator-koland"
 ARCHIVE="Worker-Creator-koland-${OS_LOWER}-${ARCH}.${EXT}"
 LATEST_VERSION=$(curl -fsSL https://raw.githubusercontent.com/Kolandone/wcv2/refs/heads/main/VERSION)
 
