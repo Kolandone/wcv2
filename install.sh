@@ -54,7 +54,6 @@ echo "Downloading ${ARCHIVE}..."
 curl -L -# -o "${ARCHIVE}" "https://github.com/Kolandone/wcv2/releases/latest/download/${ARCHIVE}"
 
 if [ "$EXT" = "zip" ]; then
-    
     unzip -q -o "${ARCHIVE}"
     if [ -d "cf-worker-wizard-${OS_LOWER}-${ARCH}" ]; then
         mv "cf-worker-wizard-${OS_LOWER}-${ARCH}/${BINARY}" .
@@ -62,13 +61,17 @@ if [ "$EXT" = "zip" ]; then
     fi
 else
     
-    tar xzf "${ARCHIVE}" --strip-components=1
+    tar xzf "${ARCHIVE}"
+    
+    
+    if [ -d "cf-worker-wizard-${OS_LOWER}-${ARCH}" ]; then
+        mv "cf-worker-wizard-${OS_LOWER}-${ARCH}/${BINARY}" .
+        rm -rf "cf-worker-wizard-${OS_LOWER}-${ARCH}"
+    fi
 fi
-
 
 rm -f "${ARCHIVE}"
 rm -f LICENSE
-
 
 chmod +x "./${BINARY}" && \
 exec ./"${BINARY}"
