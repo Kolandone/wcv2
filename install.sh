@@ -41,13 +41,13 @@ if [ -x "./${BINARY}" ]; then
     echo "Latest version: ${LATEST_VERSION}"
 
     if [ "${INSTALLED_VERSION}" = "${LATEST_VERSION}" ]; then
-        echo "wc is up to date. Running..."
+        echo "worker creator is up to date. Running..."
         exec ./"${BINARY}"
     else
         echo "Updating to version ${LATEST_VERSION}..."
     fi
 else
-    echo "wc not found on device. Installing version ${LATEST_VERSION}..."
+    echo "worker creator not found on device. Installing version ${LATEST_VERSION}..."
 fi
 
 echo "Downloading ${ARCHIVE}..."
