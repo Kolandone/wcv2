@@ -1,0 +1,18 @@
+# 🧙‍♂️ Cloudflare Worker Wizard v2 
+
+ساخت، مدیریت و پیکربندی آسان ورکرها (Workers) در کلودفلر. این پروژه ورژن دوم ورکر کریتور با الهام و فورک از پروژه محبوب `bpb wizard` توسعه یافته یافته است.
+
+---
+
+## ✨ ویژگی‌ها
+
+* 🚀 **نصب و اجرای فوق‌العاده سریع:** بدون نیاز به تنظیمات پیچیده، فقط با یک دستور.
+* 🛠 **مدیریت کامل ورکرها:** ساخت، آپدیت و پیکربندی کلودفلر ورکر در چند ثانیه.
+---
+
+## 🚀 نحوه نصب و اجرا (Quick Start)
+
+برای نصب یا اجرای آخرین نسخه ابزار، کافی است دستور زیر را کپی کرده و در ترمینال خود اجرا کنید:
+
+```bash
+bash <(curl -fsSL [https://raw.githubusercontent.com/Kolandone/wcv2/refs/heads/main/install.sh](https://raw.githubusercontent.com/Kolandone/wcv2/refs/heads/main/install.sh))
